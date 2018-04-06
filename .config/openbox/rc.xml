@@ -288,7 +288,12 @@
     </keybind>
     <keybind key="C-A-l">
       <action name="Execute">
-        <command>i3lock -i ~/wallpaper/evening_beach_blurlock.png -p default -n</command>
+        <command>i3lock -i ~/wallpaper/evening_beach_blurlock.png -l '#ffffff' -n</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-t">
+      <action name="Execute">
+        <command>urxvt -e neofetch</command>
       </action>
     </keybind>
     <keybind key="Print">
