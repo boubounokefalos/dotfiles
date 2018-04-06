@@ -158,9 +158,8 @@ format-padding = 2
 format-underline = ${colors.background-3}
 format-background = ${colors.background-3}
 format-background-underline = ${colors.background-3}
-format = <label>
-label =  %date% %time%
-
+format = %{A1:gsimplecal & disown:}  <label> %{A}
+label = %date% %time%
 
 [module/volume]
 type = internal/volume
