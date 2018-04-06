@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="Openbox 3">
+		<item label="  Terminal">
+			<action name="Execute">
+				<execute>urxvt</execute>
+			</action>
+		</item>
+		<item label="  Browser">
+			<action name="Execute">
+				<execute>x-www-browser</execute>
+			</action>
+		</item>
+		<!-- This requires the presence of the 'menu' package to work -->
+		<item label="  Files">
+			<action name="Execute">
+				<execute>urxvt -e ranger</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-39254" label="  Graphics">
+			<item label="  Gimp">
+				<action name="Execute">
+					<execute>gimp</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-65542" label="  Internet">
+			<item label=" Google Chrome">
+				<action name="Execute">
+					<execute>google-chrome-stable</execute>
+				</action>
+			</item>
+			<item label="  Google Hangouts">
+				<action name="Execute">
+					<execute>/opt/google/chrome/google-chrome --profile-directory=Default --app-id=knipolnnllmklapflnccelgolnpehhpl</execute>
+				</action>
+			</item>
+			<item label=" Transmission">
+				<action name="Execute">
+					<execute>transmission-gtk</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-414722" label="  Media">
+			<item label="  Mpv">
+				<action name="Execute">
+					<execute>mpv --profile=pseudo-gui</execute>
+				</action>
+			</item>
+			<item label="  Ncmpcpp">
+				<action name="Execute">
+					<execute>urxvt -e ncmpcpp</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-084" label="  Settings">
+			<item label="  Audio Settings">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
+				</action>
+			</item>
+			<item label="  Default Apps">
+				<action name="Execute">
+					<execute>gksudo exo-preferred-applications</execute>
+				</action>
+			</item>
+			<item label="  LightDM Settings">
+				<action name="Execute">
+					<execute>gksudo lightdm-gtk-greeter-settings</execute>
+				</action>
+			</item>
+			<item label="  LXappearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="  Net Settings">
+				<action name="Execute">
+					<execute>wicd-client</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-04140" label=" Utilities">
+			<item label="  Htop">
+				<action name="Execute">
+					<execute>urxvt -e htop</execute>
+				</action>
+			</item>
+			<item label="  Leafpad">
+				<action name="Execute">
+					<execute>leafpad</execute>
+				</action>
+			</item>
+			<item label="  MkUSB">
+				<action name="Execute">
+					<execute>/usr/share/mkusb/mkusb-start</execute>
+				</action>
+			</item>
+			<item label="  PCmanFM">
+				<action name="Execute">
+					<execute>pcmanfm</execute>
+				</action>
+			</item>
+			<item label="  Ranger">
+				<action name="Execute">
+					<execute>urxvt -e ranger</execute>
+				</action>
+			</item>
+			<item label="  uRxvt">
+				<action name="Execute">
+					<execute>urxvt</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="/Debian"/>
+		<separator/>
+		<menu id="root-menu-741341" label="  Screenshot">
+			<item label="In 5 sec..">
+				<action name="Execute">
+					<execute>/home/darkdog/.config/openbox/scrot5.sh</execute>
+				</action>
+			</item>
+			<item label="In 10 sec..">
+				<action name="Execute">
+					<execute>/home/darkdog/.config/openbox/scrot10.sh</execute>
+				</action>
+			</item>
+			<item label="in 15 sec..">
+				<action name="Execute">
+					<execute>/home/darkdog/.config/openbox/scrot15.sh</execute>
+				</action>
+			</item>
+		</menu>
+		<menu id="root-menu-184432" label="  Openbox">
+			<item label="  ObConf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="  ObKey">
+				<action name="Execute">
+					<execute>obkey</execute>
+				</action>
+			</item>
+			<item label="  ObMenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="  Reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+		</menu>
+		<separator/>
+		<item label="  Leave..">
+			<action name="Execute">
+				<execute>oblogout</execute>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
