@@ -1,0 +1,5 @@
+sh ~/.fehbg &
+compton &
+polybar -r example &
+xset +fp /home/darkdog/.fonts &
+    xset fp rehash &
