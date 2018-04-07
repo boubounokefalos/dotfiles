@@ -3,6 +3,8 @@ Linux eye candy
 
 So this is a small line-up of my Ubuntu/openbox 16.04 minimal installation. Most of it is reworked files of other people, modded to suit my needs and help me build a light-weight system.
 
+PS: This is optimal for my small laptop (1280x800) but I'm not sure it will look that good in higher resolutions :)
+
 ### Setup:
 * openbox
 * polybar
