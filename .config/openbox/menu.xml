@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="Openbox 3">
 		<item label="  Terminal">
 			<action name="Execute">
-				<execute>urxvt -e neofetch</execute>
+				<execute>urxvt</execute>
 			</action>
 		</item>
 		<item label="  Browser">
@@ -58,11 +58,7 @@
 					<execute>mpv --profile=pseudo-gui</execute>
 				</action>
 			</item>
-			<item label="  Ncmpcpp">
-				<action name="Execute">
-					<execute>urxvt -e ncmpcpp</execute>
-				</action>
-			</item>
+			<menu execute="~/.config/openbox/music.sh" id="pipe-752159" label="  Ncmpcpp"/>
 		</menu>
 		<menu id="root-menu-084" label="  Settings">
 			<item label="  Audio Settings">
@@ -107,6 +103,11 @@
 					<execute>/usr/share/mkusb/mkusb-start</execute>
 				</action>
 			</item>
+			<item label="  Neofetch">
+				<action name="Execute">
+					<execute>urxvt -e neofetch</execute>
+				</action>
+			</item>
 			<item label="  PCmanFM">
 				<action name="Execute">
 					<execute>pcmanfm</execute>
@@ -115,6 +116,11 @@
 			<item label="  Ranger">
 				<action name="Execute">
 					<execute>urxvt -e ranger</execute>
+				</action>
+			</item>
+			<item label="  Updates">
+				<action name="Execute">
+					<execute>urxvt --geometry 60x5 -e /home/darkdog/.config/openbox/update.sh</execute>
 				</action>
 			</item>
 			<item label="  uRxvt">
