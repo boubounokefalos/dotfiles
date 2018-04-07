@@ -1,7 +1,7 @@
 ## DaRk_dOg's dotfiles
-my eye candy place
+Linux eye candy
 
-So this is a small line-up of my Ubuntu/openbox 16.04 minimal installation. Most of it is reworked files of other people, modded to suit my needs.
+So this is a small line-up of my Ubuntu/openbox 16.04 minimal installation. Most of it is reworked files of other people, modded to suit my needs and help me build a light-weight system.
 
 ### Setup:
 * openbox
