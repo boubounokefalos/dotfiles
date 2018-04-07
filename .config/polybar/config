@@ -7,7 +7,6 @@
 
 [colors]
 background = #ffffff
-;background-1 = #49726a
 background-1 = #8a8a8a
 background-2 = #8a8a8a
 background-3 = #fb8a5e
@@ -51,7 +50,7 @@ font-2 = sm4tik:pixelsize=10;1
 
 modules-left = mpd
 modules-center = 
-modules-right =  weather xkeyboard volume wlan date
+modules-right = desktop weather xkeyboard volume wlan date
 ;extras-not-used = filesystem memory cpu temperature 
 
 [module/mpd]
@@ -193,12 +192,18 @@ type = custom/script
 interval = 10
 format-underline = ${colors.background-2}
 format-background = ${colors.background-2}
-;format-foreground = ${colors.background}
 format-padding = 2
 format = <label>
 format-prefix = " "
 exec = python3 ~/.config/polybar/weather
 
+[module/desktop]
+type = custom/text
+content = 
+click-left = wmctrl -k on
+content-background = ${colors.background}
+content-foreground = ${colors.background-1}
+content-padding = 2
 
 [settings]
 screenchange-reload = true
